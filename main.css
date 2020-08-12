@@ -10,7 +10,6 @@
             font-size: 10px;
             font-family: 'josefin_sansregular', sans-serif;
             color: #eee;
-            
         }
         
         body {
@@ -18,7 +17,6 @@
             height: 100%;
             background: url("images/sitebg.jpg") no-repeat center fixed;
             background-size: cover;
-           
         }
         
         section {
@@ -65,14 +63,11 @@
         
         .container {
             width: 90%;
-            max-width:100vw;
+            max-width: 100vw;
             height: 100%;
             margin: 0 auto;
             position: relative;
             overflow: hidden;
-
-            
-            
         }
         
         .section-heading {
@@ -81,8 +76,8 @@
         }
         
         .section-heading h1 {
-            font-size: 3.5rem;
-            color: rgba(255, 255, 255, .3);
+            font-size: 10rem;
+            opacity: .9;
             text-transform: uppercase;
             font-weight: 300;
             position: relative;
@@ -104,16 +99,13 @@
         }
         
         .section-heading h1::before {
-            width: 10rem;
+            width: 30rem;
             height: 3px;
-            border-radius: .8rem;
-        }
-        
-        .section-heading h1::after {
-            width: 1.5rem;
-            height: 1.5rem;
-            border-radius: 100%;
-            bottom: -1rem
+            border-radius: 70%;
+            background: linear-gradient(to left, #fdcb9e, #00b7c2);
+            background-clip: inherit;
+            -webkit-background-clip: inherit;
+            opacity: .9;
         }
         
         .section-heading h6 {
@@ -153,7 +145,7 @@
             width: 100%;
             height: 100%;
             display: inline;
-            justify-content: left;
+            justify-content: center;
             align-items: left;
             margin: 0 1rem;
         }
@@ -323,8 +315,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-           
-            
         }
         
         .about-heading {
@@ -352,10 +342,10 @@
         
         .about-details {
             flex: 2;
-            
         }
         
         .social-media {
+            text-shadow: none;
             margin-top: 5rem;
         }
         
@@ -486,9 +476,9 @@
         /*Start timeline */
         
         .timeline ul {
-            border-left: 4px solid #fdcb9e;
-            border-radius: .8rem;
-            background-color: rgba(0, 0, 0, 0.05);
+            border-left: 2px solid #fdcb9e;
+            border-radius: .4rem;
+            background-color: rgba(27, 38, 44, 0.1);
             margin: 0 auto;
             padding: 5rem;
             list-style: none;
@@ -497,16 +487,16 @@
         }
         
         .timeline h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             text-transform: uppercase;
             font-weight: 300;
-            margin-top: 1rem;
+            margin-top: 3rem;
             margin-bottom: 1rem;
-            opacity: .3;
+            color: #00B7C2;
         }
         
         .timeline .date {
-            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            border-bottom: 1px solid rgba(255, 255, 255, .7);
             margin-bottom: 1rem;
             padding-bottom: 1rem;
             position: relative;
@@ -536,18 +526,18 @@
         
         .timeline .date::after {
             content: '';
-            box-shadow: 0 0 0 4px #00b7c2;
-            border-radius: 100%;
+            box-shadow: 0 0 0 2px #00b7c2;
+            border-radius: 10%;
             left: -8rem;
             height: 1.5rem;
             width: 1.5rem;
-            background-color: #313534;
+            background-color: #1B262C;
         }
         /*End timeline*/
         /*Start Contact Form*/
         
         .contact {
-            background-color: #424D7A;
+            background-color: #0F4C75;
         }
         
         form {
@@ -638,8 +628,6 @@
         /*media queries*/
         /* depending on size of scrren, display different image/text*/
         
-
-
         @media screen and (max-width: 1200px) {
             body {
                 background: url("images/sitebg.jpg") no-repeat center fixed;
@@ -653,7 +641,6 @@
             }
             .nav-list {
                 flex-direction: column;
-            
             }
             li {
                 margin: 2rem 0;
@@ -694,7 +681,6 @@
         @media screen and (max-width: 600px) {
             .menu-toggler {
                 top: 2rem;
-                
                 right: 2rem;
             }
             .landing-text h1 {
@@ -708,7 +694,6 @@
             }
             .about .container {
                 flex-direction: column;
-                
             }
             .profile-img {
                 margin: 0 0 7rem 0;
@@ -737,9 +722,9 @@
                 right: 2rem;
             }
         }
-        @media screen and (max-height: 750px){
+        
+        @media screen and (max-height: 750px) {
             .nav-list {
                 flex-direction: row;
-            
             }
         }
