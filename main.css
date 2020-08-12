@@ -648,8 +648,10 @@
 
 
         @media screen and (max-width: 1200px) {
+
+
             body {
-                background: url("images/sitebg.jpg") no-repeat center fixed;
+                background: url("images/sitebg2.jpg") no-repeat center fixed;
                 background-size: cover;
             }
             .landing-text h1 {
