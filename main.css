@@ -10,6 +10,7 @@
             font-size: 10px;
             font-family: 'josefin_sansregular', sans-serif;
             color: #eee;
+            
         }
         
         body {
@@ -17,10 +18,12 @@
             height: 100%;
             background: url("images/sitebg.jpg") no-repeat center fixed;
             background-size: cover;
+           
         }
         
         section {
             padding: 6rem 0;
+            text-shadow: 1px 1px 3px black;
         }
         
         a {
@@ -320,6 +323,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+           
             
         }
         
@@ -733,7 +737,7 @@
                 right: 2rem;
             }
         }
-        @media screen and (max-height: 530px){
+        @media screen and (max-height: 750px){
             .nav-list {
                 flex-direction: row;
             
