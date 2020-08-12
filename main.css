@@ -23,6 +23,7 @@
         
         section {
             padding: 6rem 0;
+            /* height: 100vh; */
             text-shadow: 1px 1px 3px black;
         }
         
@@ -367,14 +368,23 @@
             -ms-transition: color 650ms;
             -o-transition: color 650ms;
         }
-        
-        .fa-facebook-square:hover {
-            color: #4267b2
-        }
-        
+
         .fa-linkedin:hover {
             color: #0E76A8
         }
+
+        .fa-github:hover {
+            background: linear-gradient(to top, #fdcb9e, #00b7c2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fa-twitter:hover {
+            color: #00ACEE
+        }
+        
+
         
         .fa-instagram:hover {
             background: linear-gradient(to top, #FEDA77, #F58529, #DD2A7B, #8134AF, #515BD4);
@@ -673,6 +683,8 @@
             .about-details li {
                 margin: 0 2rem;
             }
+      
+
             .icon-container {
                 width: 7rem;
                 height: 7rem;
