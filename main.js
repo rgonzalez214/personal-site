@@ -45,5 +45,15 @@ $(document).ready(function() {
         duration: 1800
     });
 
-
 });
+function sendEmail(){
+    Email:send({
+    Host:"mail.rolandogonzalez.space",
+    Name: "name",
+    From: "sender's email address",
+    Subject: "email subject line",
+    })
+    .then(function(message){
+        alert("mail sent successfully")
+    });
+}
